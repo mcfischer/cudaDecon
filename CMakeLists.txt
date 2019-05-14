@@ -95,7 +95,7 @@ find_package(CUDA REQUIRED)
 
 
 if (WIN32)
-  set (FFTW3_ROOT_DIR C:/fftw3)
+  set (FFTW3_ROOT_DIR C:/Users/Martin/source/libs/fftw3)
   set (FFTW3F_LIBRARY libfftw3f-3)
   find_package(FFTW3 COMPONENTS single)
 
@@ -103,8 +103,8 @@ if (WIN32)
 	set (TIFF_LIBRARY C:/libtiff/libtiff)
 	set (TIFF_INCLUDE_DIR C:/libtiff/libtiff)
   else()
-	set (TIFF_LIBRARY C:/libtiff)
-	set (TIFF_INCLUDE_DIR C:/libtiff)
+	set (TIFF_LIBRARY C:/Users/Martin/source/repos/extlib/libtiff_4_0_10/libtiff)
+	set (TIFF_INCLUDE_DIR C:/Users/Martin/source/repos/extlib/libtiff_4_0_10/libtiff)
   endif()
 
 else()
@@ -122,7 +122,7 @@ if (NOT WIN32)
 endif()
 
 if(WIN32)
-  set (BOOST_ROOT C:/boost/boost_1_69_0) # give hint where to find Boost
+  set (BOOST_ROOT C:/Users/Martin/source/libs/boost_1_70_0) # give hint where to find Boost
   find_package( Boost )
 else()
   find_package( Boost REQUIRED COMPONENTS program_options filesystem system)
